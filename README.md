@@ -37,19 +37,7 @@ $ CREATE TABLE Pedido
  servico VARCHAR(n),  
  descricao VARCHAR(n),  
  idPedido INT PRIMARY KEY,  
- confirmado VARCHAR(n),  
- data DATE,  
- idCliente INT,  
- codEquipe INT,  
-); 
-````
-````bash
-$ CREATE TABLE Pedido 
-( 
- servico VARCHAR(n),  
- descricao VARCHAR(n),  
- idPedido INT PRIMARY KEY,  
- confirmado VARCHAR(n),  
+ confirmado boolean,  
  data DATE,  
  idCliente INT,  
  codEquipe INT,  
@@ -62,7 +50,7 @@ $ CREATE TABLE Servico
  descricao VARCHAR(n),  
  idServico INT PRIMARY KEY,  
  nome VARCHAR(n),  
- disponivel VARCHAR(n),  
+ disponivel boolean,  
  valor FLOAT,  
  idOrdem_Servico INT,  
 ); 
@@ -75,7 +63,7 @@ $ CREATE TABLE Peca
  descricao VARCHAR(n),  
  nome VARCHAR(n),  
  valor FLOAT,  
- disponivel VARCHAR(n),  
+ disponivel boolean,  
  idOrdem_Servico INT,  
 ); 
 
@@ -85,7 +73,7 @@ $ CREATE TABLE Ordem_Servico
 ( 
  idOrdem INT PRIMARY KEY,  
  valor FLOAT,  
- status VARCHAR(n),  
+ status boolean,  
  data_de_conclusao DATE,  
  data_de_emissao DATE,  
  idPedido INT,  
