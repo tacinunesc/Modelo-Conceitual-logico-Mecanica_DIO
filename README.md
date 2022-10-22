@@ -1,4 +1,4 @@
-# Modelo-Conceitual-logico-Mecanica_DIO
+# Modelo Conceitual logico da Mecanica Desenvolvido pelo Bootcamp da DIO
 
 ## Descricao Modelo Conceitual da Mecânica
 
